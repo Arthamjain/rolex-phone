@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rolex Phone — Luxury Never Upgrades</title>
+<meta name="description" content="A concept luxury smartphone engineered like a timepiece. Student pitch project — not affiliated with Rolex SA.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<nav><a class="logo" href="index.html">ROLEX PHONE</a>
+<ul><li><a class="on" href="index.html">Product</a></li><li><a href="pitch.html">The Pitch</a></li><li><a href="numbers.html">Numbers & Ask</a></li></ul></nav>
+
+<header class="hero">
+  <div class="eyebrow">Series I · Numbered edition of 1,000 · By appointment only</div>
+  <h1 class="serif gold">Luxury<br>never upgrades.</h1>
+  <p>One design. Never replaced, never refreshed, never obsolete. Rolex doesn't sell time. We don't sell a phone.</p>
+  <a class="btn" href="#waitlist">Join the waitlist</a>
+  <div class="scroll-hint">SCROLL ↓</div>
+</header>
+
+<div class="scene">
+  <div class="sticky">
+    <div class="glow"></div>
+    <div class="progress"><b></b></div>
+    <div class="device">
+      <div class="screen">
+        <div class="dial"><div class="hand"></div><div class="t"><span>10:09</span><small>NO. 001 / 1000</small></div></div>
+        <div class="apps"><i></i><i></i><i></i><i></i></div>
+      </div>
+    </div>
+    <div class="crown"></div>
+    <svg class="side" viewBox="0 0 500 220" fill="none">
+      <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#6b5520"/><stop offset=".5" stop-color="#f1d88a"/><stop offset="1" stop-color="#6b5520"/></linearGradient>
+      <radialGradient id="b" cx=".5" cy=".2" r=".9"><stop offset="0" stop-color="#2b2b30"/><stop offset="1" stop-color="#050506"/></radialGradient></defs>
+      <path d="M10 50H490C490 50 490 62 468 92C400 195 100 195 32 92C10 62 10 50 10 50Z" fill="url(#b)" stroke="url(#g)" stroke-width="3"/>
+      <rect x="10" y="44" width="480" height="8" rx="4" fill="url(#g)"/>
+      <rect x="10" y="38" width="480" height="4" rx="2" fill="#9fd4ff" opacity=".35"/>
+      <rect x="486" y="70" width="12" height="34" rx="3" fill="url(#g)"/>
+      <text x="250" y="25" fill="#9a9588" font-family="Inter" font-size="11" text-anchor="middle" letter-spacing="3">FLAT SAPPHIRE FACE</text>
+      <text x="250" y="150" fill="#c9a24b" font-family="Inter" font-size="11" text-anchor="middle" letter-spacing="3">PALM-FILLING DOMED BACK</text>
+    </svg>
+    <div class="caption"><h2 class="serif gold">A phone is a box.</h2><p>Rectangles were never designed for the human hand.</p></div>
+  </div>
+</div>
+
+<section><div class="wrap">
+  <div class="eyebrow reveal">Our promise</div>
+  <h2 class="serif reveal" style="font-size:clamp(2.2rem,6vw,4.5rem);margin-top:14px">It will not change.<br><span class="gold">That is the luxury.</span></h2>
+  <p class="reveal" style="color:var(--mute);max-width:620px;margin-top:22px">Every other phone is a yearly argument that last year's was wrong. Ours is a decision. One form, perfected, then kept. When the battery tires or the glass is touched by life, we restore it — you never replace it. Like a watch your grandfather wore, only the one on your wrist today is yours.</p>
+  <div class="grid">
+    <div class="card reveal"><h3>Sapphire crystal</h3><p>Watch-grade, scratch-proof, ground flat on the face.</p></div>
+    <div class="card reveal"><h3>Steel & titanium</h3><p>Machined from solid blocks. Heavy where it matters.</p></div>
+    <div class="card reveal"><h3>In-house finishing</h3><p>Brushed, polished and signed off by one atelier.</p></div>
+    <div class="card reveal"><h3>The crown</h3><p>A knurled crown replaces the plain button. Turn to scroll, press to wake.</p></div>
+    <div class="card reveal"><h3>Numbered, forever</h3><p>1,000 units. Serial engraved. When they're gone, they're gone.</p></div>
+    <div class="card reveal"><h3>Lifetime servicing</h3><p>Restored, never replaced. The core of the promise.</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap" style="text-align:center">
+  <div class="eyebrow reveal">Series I</div>
+  <div class="big reveal" style="margin:14px 0">₹4,50,000</div>
+  <p class="reveal" style="color:var(--mute)">Only 1,000 will ever exist · Allocation by invitation</p>
+  <div class="grid" style="text-align:left">
+    <div class="card reveal"><div class="big">1,000</div><p>Units in Series I. Not one more.</p></div>
+    <div class="card reveal"><div class="big" id="wl">0</div><p>Names on the waitlist for the first 300 slots.</p></div>
+    <div class="card reveal"><div class="big">∞</div><p>Years of servicing, included with every serial.</p></div>
+  </div>
+  <div id="waitlist" style="margin-top:60px"><a class="btn" href="numbers.html">See the numbers & ask</a></div>
+</div></section>
+
+<footer>Rolex Phone is a hypothetical startup concept created for a Masters' Union pitch assignment. Not affiliated with or endorsed by Rolex SA. Prices, counts and figures are placeholders.</footer>
+<script src="site.js"></script>
+<script>{let n=0,t=2140,e=document.getElementById('wl');const io2=new IntersectionObserver(a=>{if(a[0].isIntersecting){io2.disconnect();const i=setInterval(()=>{n+=Math.ceil((t-n)/12);e.textContent=n.toLocaleString('en-IN');if(n>=t)clearInterval(i)},40)}});io2.observe(e)}</script>
+</body></html>
